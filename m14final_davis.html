@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>naniZoo App/Website for WNM 617</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="m14.css" /> <!--my custom css-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="jquery_themes/themes/final_m10.min.css" /> <!--jQuery custom theme-->
+    <link rel="stylesheet" href="jquery_themes/themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="final_m14.js"></script><!--js file-->
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" /><!--google fonts-->
+    
+
+</head>
+
+<body>
+
+<!-- ======================================= Page one ============================================= -->
+<div data-role="page" id="one">
+
+    <div data-role="content" data-theme="a">
+        <div class="middle"> 
+            <a href="#two">
+                <div class="puzzbox">
+                    <h1 class="puzz">PUZZLES</h1>
+                </div> <!--main page box-->
+            </a>
+        </div><!--middle-->
+
+        <div class="middle">
+            <div class="penguinmain">
+                <img src="images/mainpenguin.png" alt="main character" class="main_character">
+    </div><!--penguinmain-->
+        <p> Best viewed at the smallest screen size.</p>
+</div><!--middle-->
+
+    <div class="minibox">
+        <img src="images/settingsapp.png" alt="settings icon"  class="mini">
+    </div><!--minibox-->
+
+    </div><!--content-->
+
+    <div data-role="footer">
+        <h6>&copy; 2017 J. Davis</h6>
+    </div>
+</div><!--page one-->
+
+
+<!-- ======================================= Page two ============================================= -->
+<div data-role="page" id="two" data-theme="a">
+
+   <div data-role="header" data-theme="a">
+        <h1 class="puzzpage">Puzzles</h1>
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a">
+   
+        <div class="minicontain">
+            <a href="#three"><img src="images/lionmini.png" alt="lion mini puzzle" class="miniimage"></a>
+        </div> <!--contain-->  
+
+        <div class="minicontain">
+            <a href="#four"><img src="images/orcamini.png" alt="orca mini puzzle" class="miniimage"></a>
+        </div> <!--contain-->
+
+        <div class="minicontain">
+           <a href="#five"><img src="images/penguinmini.png" alt="penguin mini puzzle" class="miniimage"></a>
+        </div> <!--contain-->
+
+    </div><!--page two content-->  
+
+        <p><a href="#one" data-direction="reverse" data-role="button" data-theme="a">Return home</a></p>
+        
+    <div data-role="footer">
+        <h6>&copy; 2017 J. Davis</h6>
+    </div>
+
+</div><!--page two-->
+
+
+<!-- =============================== Page three LION PUZZLE====================================== -->
+<div data-role="page" id="three" data-theme="a">
+
+   <div data-role="header" style="overflow:hidden;" class="nav-custom-example" data-theme="b">
+        <div data-role="navbar" class="nav-custom-example">
+            <ul>
+                <li><a href="#two" id="leftarrow" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+                <li><a href="#two" id="homeapp" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+                <li><a href="#four" id="rightarrow" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+            </ul>
+        </div><!--navbar-->     
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a">
+
+            <div id="dropped"><img src="images/lion.png" alt="lion background" class="drop"></div>
+
+                <div class="nodrag"><img src="images/penguinpuzzle.png" alt="penguin" class="penguin"></div>
+
+                <div class="nodrag"><img src="images/orcapuzzle.png" alt="orca" class="orca"></div>
+                             
+                <div id="dragged"><img src="images/lionpuzzle.png" alt="lion" class="lion"></div>
+
+               
+    </div><!--page three content-->  
+
+    <div data-role="footer">
+        <h6>&copy; 2017 J. Davis</h6>
+    </div>
+</div><!--page three-->
+
+
+<!-- =============================== Page four ORCA PUZZLE========================================== -->
+<div data-role="page" id="four" data-theme="a">
+
+    <div data-role="header" style="overflow:hidden;" class="nav-custom-example" data-theme="b">
+        <div data-role="navbar" class="nav-custom-example">
+            <ul>
+                <li><a href="#three" id="leftarrow" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+                <li><a href="#two" id="homeapp" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+                <li><a href="#five" id="rightarrow" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+            </ul>
+        </div><!--navbar-->     
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a">
+
+            <div id="dropped_2"><img src="images/orca.png" alt="orca background" class="drop"></div>
+
+                <div class="nodrag"><img src="images/penguinpuzzle.png" alt="penguin" class="penguin"></div>
+                             
+                <div class="nodrag"><img src="images/lionpuzzle.png" alt="lion" class="lion"></div>
+                
+                <div id="dragged_2"><img src="images/orcapuzzle.png" alt="orca" class="orca"></div>
+
+                
+    </div><!--page four content-->  
+
+    <div data-role="footer">
+        <h6>&copy; 2017 J. Davis</h6>
+    </div>
+
+</div><!--page four-->
+
+
+<!-- ===========================Page five PENGUIN PUZZLE========================================= -->
+
+<div data-role="page" id="five" data-theme="a">
+
+   <div data-role="header" style="overflow:hidden;" class="nav-custom-example" data-theme="b">
+        <div data-role="navbar" class="nav-custom-example">
+            <ul>
+                <li><a href="#four" id="leftarrow" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+                <li><a href="#two" id="homeapp" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+                <li><a href="#two" id="rightarrow" data-icon="custom" class="ui-btn-active" data-theme="b"></a></li>
+            </ul>
+        </div><!--navbar-->     
+    </div> <!--header-->
+
+    <div data-role="content" data-theme="a">
+
+            <div id="dropped_3"><img src="images/penguin.png" alt="penguin background" class="drop"></div>
+
+            <div class="nodrag"><img src="images/orcapuzzle.png" alt="orca" class="orca"></div>
+                             
+            <div class="nodrag"><img src="images/lionpuzzle.png" alt="lion" class="lion"></div>
+
+            <div id="dragged_3"><img src="images/penguinpuzzle.png" alt="penguin" class="penguin"></div>
+
+          
+    </div><!--page five content-->  
+
+
+    <div data-role="footer">
+        <h6>&copy; 2017 J. Davis</h6>
+    </div>
+ </div><!--page five-->
+
+
+    </body>
+        
+</html>
+
+
+
+
+
